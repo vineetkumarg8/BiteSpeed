@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# React Flow Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visual flow builder application built with React Flow, allowing users to create chatbot conversation flows with drag-and-drop functionality.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[View Live Application](https://vineetkumarg8.github.io/BiteSpeed/)**
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Drag & Drop Interface** - Intuitive node placement from extensible Nodes Panel
+- **Text Message Nodes** - Create and edit text-based conversation nodes
+- **Smart Connections** - One-to-many edge connections (source: max 1, target: multiple)
+- **Settings Panel** - Edit node content when selected
+- **Flow Validation** - Built-in save validation with error handling
+- **Responsive Design** - Works seamlessly across different screen sizes
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Built With
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **React 19** - Modern React with latest features
+- **TypeScript** - Type-safe development
+- **React Flow** - Powerful flow builder library
+- **Vite** - Fast build tool and dev server
+- **Zustand** - Lightweight state management
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏃‍♂️ Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📝 Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Add Nodes** - Drag text message nodes from the left panel
+2. **Connect Nodes** - Create flow connections between nodes
+3. **Edit Content** - Select nodes to edit their text content
+4. **Save Flow** - Validate and save your conversation flow
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔧 Development
+
+The application uses modern React patterns with TypeScript for type safety and Zustand for efficient state management.
