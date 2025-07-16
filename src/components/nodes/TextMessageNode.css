@@ -1,0 +1,56 @@
+/* Text Message Node Styles */
+
+.text-message-node {
+  background: white;
+  border-radius: 8px;
+  min-width: 200px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.text-message-node.selected {
+  border: 2px solid #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.text-message-node:not(.selected) {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-message-node__handle {
+  background: #6b7280;
+  border: 2px solid white;
+  width: 8px;
+  height: 8px;
+}
+
+.text-message-node__header {
+  background: #a7f3d0;
+  color: #065f46;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-message-node__icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.text-message-node__content {
+  padding: 12px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+  min-height: 40px;
+}
+
+.text-message-node__content--empty {
+  color: #9ca3af;
+  font-style: italic;
+}
